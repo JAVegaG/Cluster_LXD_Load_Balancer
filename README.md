@@ -1,12 +1,12 @@
-# **Cluster LXD + Balanceador de carga usando HAProxy + JMeter en ambiente Vagrant con manejo de fallas y servidores de backup.**
+# **LXD Cluster + Load Balancer using HAProxy + JMeter in a Vagrant environment with fault management and backup servers.**
 
-Implementación de balanceador de carga con la ayuda de [HAProxy](www.haproxy.org/). Los clientes enviarán peticiones al balanceador de carga HAProxy y obtendrán respuestas desde dos servidores web corriendo en contenedores LXD.
+Load balancer implementation with the help of [HAProxy](www.haproxy.org/). Clients will send requests to the HAProxy load balancer and get responses from two web servers running in LXD containers.
 
-## ** Requerimientos **
+## ** Requirements **
 
-- Las peticiones no se realizan directamente a los servidores web, sino que el balanceador de carga decidirá que servidor será el encargado de procesar la petición.
-- Los dos servidores tendrán solo apache corriendo y en el balanceador de carga se ejecutará HAProxy.
-- La GUI del balanceador de carga será accesible desde la máquina anfitriona para visualizar el estado y estadísticas detalladas de los servidores web.
-- Cada máquina virtual Vagrant debe correr al menos un contenedor LXD
-- Al menos dos contenedores LXD deben correr servidores web
-- HAProxy debe correr en un contenedor separado
+- The requests are not made directly to the web servers, but rather the load balancer will decide which server will be in charge of processing the request.
+- Both servers will have only Apache running and HAProxy will be running on the load balancer.
+- The load balancer GUI will be accessible from the host machine to view the status and detailed statistics of the web servers.
+- Each Vagrant virtual machine must run at least one LXD container
+- At least two LXD containers must run web servers
+- HAProxy must run in a separate container
