@@ -1,6 +1,6 @@
 # **LXD Cluster + Load Balancer using HAProxy + JMeter in a Vagrant environment with fault management and backup servers.**
 
-Load balancer implementation with the help of [HAProxy](www.haproxy.org/). Clients will send requests to the HAProxy load balancer and get responses from two web servers running in LXD containers.
+Load balancer implementation with the help of HAProxy (www.haproxy.org/). Clients will send requests to the HAProxy load balancer and get responses from two web servers running in LXD containers.
 
 ## ** Requirements **
 
